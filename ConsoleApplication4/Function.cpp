@@ -175,3 +175,36 @@ k:
     }
     cout << "-----------------------------------------------" << endl << endl << endl;
 }
+void Input(int* array1, int& NumberOfElements1, int* array2, int& NumberOfElements2)
+{
+    cout << "Select the length of the first array: ";
+    cin >> NumberOfElements1;
+    cout << "Insert the numbers of the first array: ";
+    for (int i = 0; i < NumberOfElements1; i++)
+    {
+        cin >> array1[i];
+    }
+    cout << "-----------------------------------------------" << endl;
+    cout << "Select the length of the second array: ";
+    cin >> NumberOfElements2;
+    cout << "Insert the numbers of the second array: ";
+    for (int j = 0; j < NumberOfElements2; j++)
+    {
+        cin >> array2[j];
+    }
+}
+void OutPut(int* array1, int& NumberOfElements1, int* array2, int& NumberOfElements2)
+{
+    cout << "Set of data 1: ";
+    for (int i = 0; i < NumberOfElements1; i++)
+    {
+        cout << array1[i] << " ";
+    }
+    cout << endl;
+    cout << "Set of data 2: ";
+    for (int i = 0; i < NumberOfElements2; i++)
+    {
+        cout << array2[i] << " ";
+    }
+    cout << endl;
+}
