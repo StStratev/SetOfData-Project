@@ -208,3 +208,74 @@ void OutPut(int* array1, int& NumberOfElements1, int* array2, int& NumberOfEleme
     }
     cout << endl;
 }
+bool Menu(int* array1, int& NumberOfElements1, int* array2, int& NumberOfElements2)
+{
+    int n;
+    if (bigcheck == 0)
+    {
+        cout << "Before starting, please input the two sets of data you want to work with!" << endl;
+        Input(array1, NumberOfElements1, array2, NumberOfElements2);
+        bigcheck++;
+    }
+    cout << "-----------------------------------------------" << endl;
+    cout << "LIST OF FUNCTIONS" << endl;
+    cout << "1. Input new sets of data" << endl;
+    cout << "2. Find the intersection between the two sets of data" << endl;
+    cout << "3. Find th union between the two sets of data" << endl;
+    cout << "4. Find the symetric diffrence the two sets of data" << endl;
+    cout << "5. Find the prime numbers in one of the set of data" << endl;
+    cout << "6. Exit the program" << endl;
+    cout << endl << endl;
+    OutPut(array1, NumberOfElements1, array2, NumberOfElements2);
+    cout << "-----------------------------------------------" << endl;
+    cout << endl;
+    cout << "Enter the number of the function you want to use: ";
+    cin >> n;
+    cout << "-----------------------------------------------" << endl << endl << endl;
+    switch (n)
+    {
+    case 1:
+    {
+        Input(array1, NumberOfElements1, array2, NumberOfElements2);
+        return true;
+    }
+    case 2:
+    {
+        Intersection(array1, NumberOfElements1, array2, NumberOfElements2);
+        return true;
+    }
+    case 3:
+    {
+        Union(array1, NumberOfElements1, array2, NumberOfElements2);
+        return true;
+    }
+    case 4:
+    {
+        SymetricDifference(array1, NumberOfElements1, array2, NumberOfElements2);
+        return true;
+    }
+    case 5:
+    {
+        PrimeNumbers(array1, NumberOfElements1, array2, NumberOfElements2);
+        return true;
+    }
+    case 6:
+    {
+        return false;
+    }
+    default:
+    {
+        cout << "Incorrect input. Please enter again." << endl;
+        return true;
+    }
+    }
+}
+void Exit()
+{
+    cout << "Thank you for using our program!" << endl;
+    cout << "Goodbye!" << endl << endl << endl;
+}
+void Greetings()
+{
+    cout << endl << endl << "Hello, Welcome to our project!" << endl << endl << endl;
+}
