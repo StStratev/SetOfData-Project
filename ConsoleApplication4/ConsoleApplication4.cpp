@@ -1,7 +1,6 @@
 #include <iostream>
 #include "Function.h"
 using namespace std;
-int bigcheck = 0; // declaring a global variable, that is used to signal part of the code that is going to be repeated only once
 int main()
 {
     int array1[100], NumberOfElements1, array2[100], NumberOfElements2, intersection[100], counter = 0; // declare variables of type int
