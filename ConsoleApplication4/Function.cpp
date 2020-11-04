@@ -208,6 +208,7 @@ void OutPut(int* array1, int& NumberOfElements1, int* array2, int& NumberOfEleme
     }
     cout << endl;
 }
+int bigcheck = 0;
 bool Menu(int* array1, int& NumberOfElements1, int* array2, int& NumberOfElements2)
 {
     int n;
